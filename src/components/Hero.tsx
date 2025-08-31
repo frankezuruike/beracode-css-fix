@@ -23,11 +23,11 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
-            <span className="gradient-text">BeraCode</span> AI
+            Fresh, Clean Clothes <br />
+            <span className="gradient-text">Delivered to Your Doorstep</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your business with cutting-edge AI solutions. 
-            Custom software development powered by artificial intelligence.
+            Experience premium dry cleaning and laundry services with a touch of excellence.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -36,7 +36,7 @@ const Hero = () => {
               variant="secondary"
               className="group text-lg px-8 py-4 bg-primary-foreground/10 border border-primary-foreground/20 hover:bg-primary-foreground/20 text-primary-foreground"
             >
-              Get Started Today
+              Contact Us
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             
@@ -45,7 +45,7 @@ const Hero = () => {
               variant="outline"
               className="text-lg px-8 py-4 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
             >
-              View Our Work
+              Get a Quote
             </Button>
           </div>
         </div>

@@ -9,20 +9,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@beracodeai.com",
-      link: "mailto:hello@beracodeai.com"
+      value: "Theupperroomlaundry@gmail.com",
+      link: "mailto:Theupperroomlaundry@gmail.com"
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+234 (0) 123-4567",
+      link: "tel:+2340123456789"
     },
     {
       icon: MapPin,
-      title: "Office",
-      value: "San Francisco, CA",
-      link: "#"
+      title: "Location",
+      value: "Old Karimu, FCT, Abuja",
+      link: "https://maps.google.com/?q=Old+Karimu+FCT+Abuja"
     }
   ];
 
@@ -34,7 +34,7 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your business with AI? Let's discuss your project
+            Ready for premium laundry services? Contact us for a quote or schedule a pickup
           </p>
         </div>
 
@@ -61,12 +61,12 @@ const Contact = () => {
               </div>
               <div>
                 <label className="text-sm font-medium mb-2 block">Subject</label>
-                <Input placeholder="Project Discussion" />
+                <Input placeholder="Laundry Service Inquiry" />
               </div>
               <div>
                 <label className="text-sm font-medium mb-2 block">Message</label>
                 <Textarea 
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your laundry needs..."
                   className="min-h-[120px]"
                 />
               </div>
@@ -82,7 +82,7 @@ const Contact = () => {
             <div>
               <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
               <p className="text-muted-foreground mb-8">
-                We're here to help you succeed. Reach out to us through any of these channels.
+                We're here to take care of your laundry needs. Reach out to us through any of these channels.
               </p>
             </div>
 
@@ -113,10 +113,10 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold text-lg mb-2">Ready to get started?</h4>
                 <p className="text-muted-foreground mb-4">
-                  Schedule a free consultation to discuss your AI and development needs.
+                  Schedule a pickup today and experience our premium laundry services.
                 </p>
                 <Button variant="outline" size="sm">
-                  Schedule Consultation
+                  Schedule Pickup
                 </Button>
               </CardContent>
             </Card>

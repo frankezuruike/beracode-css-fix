@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>AI-Powered Solutions | BeracodeAI - Custom Software Development</title>
-        <meta name="description" content="Transform your business with cutting-edge AI solutions and custom software development by BeracodeAI." />
-        <meta name="keywords" content="AI development, custom software, machine learning, automation, web development" />
+        <title>Premium Laundry Services | TheUpperRoom Laundry - Dry Cleaning & Delivery</title>
+        <meta name="description" content="Fresh, clean clothes delivered to your doorstep. Premium dry cleaning and laundry services in Old Karimu, FCT Abuja with pickup and delivery." />
+        <meta name="keywords" content="laundry service, dry cleaning, wash and fold, stain removal, pickup delivery, Abuja laundry" />
       </Helmet>
       
       <Header />

@@ -7,25 +7,25 @@ const Footer = () => {
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:hello@beracodeai.com", label: "Email" }
+    { icon: Mail, href: "mailto:Theupperroomlaundry@gmail.com", label: "Email" }
   ];
 
   const footerLinks = {
     Services: [
-      "AI Development",
-      "Web Development",
-      "Mobile Apps",
-      "Consulting"
+      "Dry Cleaning",
+      "Wash & Fold",
+      "Pressing & Ironing",
+      "Stain Removal"
     ],
     Company: [
       "About Us",
       "Our Team",
       "Careers",
-      "Blog"
+      "Reviews"
     ],
     Resources: [
-      "Documentation",
-      "Help Center",
+      "Pricing",
+      "FAQ",
       "Privacy Policy",
       "Terms of Service"
     ]
@@ -38,10 +38,10 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold gradient-text mb-4">
-              BeraCode AI
+              TheUpperRoom Laundry Services
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              Transforming businesses with cutting-edge AI solutions and custom software development.
+              Premium laundry and dry cleaning services delivered with care and excellence to your doorstep.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -81,7 +81,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © {currentYear} BeraCode AI. All rights reserved.
+              © {currentYear} TheUpperRoom Laundry Services. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">

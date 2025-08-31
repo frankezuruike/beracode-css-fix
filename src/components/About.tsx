@@ -4,10 +4,10 @@ import { CheckCircle, Users, Award, Rocket } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { icon: Users, label: "Happy Clients", value: "100+" },
-    { icon: Award, label: "Projects Completed", value: "200+" },
-    { icon: Rocket, label: "Years Experience", value: "5+" },
-    { icon: CheckCircle, label: "Success Rate", value: "98%" }
+    { icon: Users, label: "Happy Customers", value: "500+" },
+    { icon: Award, label: "Garments Cleaned", value: "10K+" },
+    { icon: Rocket, label: "Years Experience", value: "8+" },
+    { icon: CheckCircle, label: "Customer Satisfaction", value: "99%" }
   ];
 
   return (
@@ -17,24 +17,24 @@ const About = () => {
           {/* Left Column - Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="gradient-text">BeraCode AI</span>
+              About <span className="gradient-text">TheUpperRoom Laundry Services</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              We are a cutting-edge AI and software development company specializing in 
-              transforming businesses through intelligent automation and custom solutions.
+              We are a premium laundry and dry cleaning service dedicated to providing 
+              exceptional care for your garments with attention to detail and quality.
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our team of expert developers and AI specialists work together to deliver 
-              innovative solutions that drive growth, efficiency, and competitive advantage 
-              for our clients.
+              Our mission is to deliver outstanding laundry services that exceed expectations, 
+              ensuring your clothes look their best while saving you time and effort. 
+              We treat every garment with the utmost care and professionalism.
             </p>
             
             <div className="space-y-4 mb-8">
               {[
-                "Custom AI Solutions",
-                "Full-Stack Development",
-                "24/7 Support & Maintenance",
-                "Agile Development Process"
+                "Premium Quality Service",
+                "Expert Stain Removal",
+                "Convenient Pickup & Delivery",
+                "Eco-Friendly Cleaning Products"
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -43,7 +43,7 @@ const About = () => {
               ))}
             </div>
 
-            <Button size="lg" className="gradient-text">
+            <Button size="lg">
               Learn More About Us
             </Button>
           </div>

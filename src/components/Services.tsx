@@ -1,37 +1,37 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Code, Zap, Bot, Database, Shield } from "lucide-react";
+import { Shirt, Droplets, Wind, Sparkles, Truck, Shield } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Brain,
-      title: "AI Strategy Consulting",
-      description: "Custom AI strategies tailored to your business goals and requirements."
+      icon: Shirt,
+      title: "Dry Cleaning",
+      description: "Professional dry cleaning for delicate fabrics and formal wear with expert care."
     },
     {
-      icon: Code,
-      title: "Custom Software Development",
-      description: "Full-stack development with modern technologies and best practices."
+      icon: Droplets,
+      title: "Laundry (Wash & Fold)",
+      description: "Complete wash and fold services with premium detergents and fabric softeners."
     },
     {
-      icon: Bot,
-      title: "AI Chatbots & Automation",
-      description: "Intelligent chatbots and workflow automation to streamline operations."
+      icon: Wind,
+      title: "Pressing & Ironing",
+      description: "Professional pressing and ironing services for crisp, wrinkle-free clothing."
     },
     {
-      icon: Database,
-      title: "Data Analytics & ML",
-      description: "Transform your data into actionable insights with machine learning."
+      icon: Sparkles,
+      title: "Stain Removal",
+      description: "Expert stain removal techniques for even the toughest spots and stains."
     },
     {
-      icon: Zap,
-      title: "API Integration",
-      description: "Seamless integration with third-party services and APIs."
+      icon: Truck,
+      title: "Pickup & Delivery",
+      description: "Convenient pickup and delivery service right to your doorstep."
     },
     {
       icon: Shield,
-      title: "Enterprise Solutions",
-      description: "Scalable, secure solutions built for enterprise requirements."
+      title: "Premium Care",
+      description: "Special care for designer and delicate garments with quality guarantee."
     }
   ];
 
@@ -43,7 +43,7 @@ const Services = () => {
             Our <span className="gradient-text">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive AI and software development services to transform your business
+            Professional laundry and dry cleaning services delivered with care and excellence
           </p>
         </div>
 
