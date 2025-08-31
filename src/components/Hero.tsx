@@ -24,7 +24,8 @@ const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6">
             Fresh, Clean Clothes <br />
-            <span className="gradient-text">Delivered to Your Doorstep</span>
+            {/* The text color is changed from `gradient-text` to `text-white` for better visibility */}
+            <span className="text-white">Delivered to Your Doorstep</span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Experience premium dry cleaning and laundry services with a touch of excellence.
