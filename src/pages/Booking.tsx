@@ -165,9 +165,9 @@ const BookingPage = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full hero-gradient text-primary-foreground shadow-md">
+                <Button type="submit" size="lg" disabled={submitting} className="w-full hero-gradient text-primary-foreground shadow-md">
                   <Send className="w-4 h-4 mr-2" />
-                  Submit Pickup Request
+                  {submitting ? "Submitting…" : "Submit Pickup Request"}
                 </Button>
               </form>
             </CardContent>
