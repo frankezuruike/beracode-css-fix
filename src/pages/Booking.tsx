@@ -120,7 +120,7 @@ const BookingPage = () => {
                   <label className="text-sm font-medium mb-1.5 block">Email (Optional)</label>
                   <Input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="you@example.com"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                   />
