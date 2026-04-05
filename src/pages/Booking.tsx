@@ -36,14 +36,36 @@ const BookingPage = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.address || form.services.length === 0) {
       toast.error("Please fill in all required fields and select at least one service.");
       return;
     }
-    toast.success("Pickup request submitted! We'll contact you shortly to confirm.");
-    setForm({ name: "", phone: "", email: "", address: "", services: [], notes: "" });
+    setSubmitting(true);
+    try {
+      const res = await fetch("https://formspree.io/f/meeppvle", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          email: form.email,
+          address: form.address,
+          services: form.services.join(", "),
+          notes: form.notes,
+        }),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      toast.success("Pickup request submitted! We'll contact you shortly to confirm.");
+      setForm({ name: "", phone: "", email: "", address: "", services: [], notes: "" });
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -143,9 +165,9 @@ const BookingPage = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full hero-gradient text-primary-foreground shadow-md">
+                <Button type="submit" size="lg" disabled={submitting} className="w-full hero-gradient text-primary-foreground shadow-md">
                   <Send className="w-4 h-4 mr-2" />
-                  Submit Pickup Request
+                  {submitting ? "Submitting…" : "Submit Pickup Request"}
                 </Button>
               </form>
             </CardContent>
