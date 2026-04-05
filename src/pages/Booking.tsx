@@ -129,7 +129,7 @@ const BookingPage = () => {
                 <div>
                   <label className="text-sm font-medium mb-1.5 block">Pickup Address *</label>
                   <Input
-                    placeholder="House number, street, area"
+                    placeholder="House number, street, and area in Abuja"
                     value={form.address}
                     onChange={(e) => setForm({ ...form, address: e.target.value })}
                   />
