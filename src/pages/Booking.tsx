@@ -109,7 +109,7 @@ const BookingPage = () => {
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Phone Number *</label>
                     <Input
-                      placeholder="08012345678"
+                      placeholder="e.g., 08012345678"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     />
