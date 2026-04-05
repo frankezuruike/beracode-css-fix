@@ -101,7 +101,7 @@ const BookingPage = () => {
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Full Name *</label>
                     <Input
-                      placeholder="John Doe"
+                      placeholder="Enter your full name"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                     />
