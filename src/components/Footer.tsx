@@ -9,7 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
-            <div className="text-xl font-bold gradient-text mb-3">TheUpperRoom Laundry</div>
+            <div className="text-xl font-bold gradient-text mb-1">TheUpperRoom Laundry</div>
+            <p className="text-xs text-muted-foreground tracking-widest uppercase mb-3">Fresh. Faithful. Flawless.</p>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium laundry and dry cleaning services. The luxury of clean, delivered to your doorstep.
             </p>

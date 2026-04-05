@@ -101,7 +101,7 @@ const BookingPage = () => {
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Full Name *</label>
                     <Input
-                      placeholder="John Doe"
+                      placeholder="Enter your full name"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                     />
@@ -109,7 +109,7 @@ const BookingPage = () => {
                   <div>
                     <label className="text-sm font-medium mb-1.5 block">Phone Number *</label>
                     <Input
-                      placeholder="08012345678"
+                      placeholder="e.g., 08012345678"
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     />
@@ -120,7 +120,7 @@ const BookingPage = () => {
                   <label className="text-sm font-medium mb-1.5 block">Email (Optional)</label>
                   <Input
                     type="email"
-                    placeholder="john@example.com"
+                    placeholder="you@example.com"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                   />
@@ -129,7 +129,7 @@ const BookingPage = () => {
                 <div>
                   <label className="text-sm font-medium mb-1.5 block">Pickup Address *</label>
                   <Input
-                    placeholder="House number, street, area"
+                    placeholder="House number, street, and area in Abuja"
                     value={form.address}
                     onChange={(e) => setForm({ ...form, address: e.target.value })}
                   />

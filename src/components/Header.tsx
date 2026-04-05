@@ -19,8 +19,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 glass border-b border-border/40">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-bold gradient-text tracking-tight">
-            TheUpperRoom Laundry
+          <Link to="/" className="flex flex-col leading-tight">
+            <span className="text-xl font-bold gradient-text tracking-tight">TheUpperRoom Laundry</span>
+            <span className="text-[10px] text-muted-foreground tracking-widest uppercase">Fresh. Faithful. Flawless.</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

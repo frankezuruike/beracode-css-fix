@@ -79,7 +79,7 @@ const ContactPage = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Name *</label>
-                      <Input placeholder="Your name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
+                      <Input placeholder="Enter your full name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} />
                     </div>
                     <div>
                       <label className="text-sm font-medium mb-1.5 block">Email *</label>
